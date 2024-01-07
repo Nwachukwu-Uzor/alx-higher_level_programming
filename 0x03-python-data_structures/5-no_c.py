@@ -2,4 +2,4 @@
 
 def no_c(my_string):
       copy = my_string
-      return copy.replace('c', '').replace('C', '')
+      return copy.translate({ord('c'): None}).translate({ord('C'): None})
