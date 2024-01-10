@@ -7,9 +7,9 @@ def roman_to_int(roman_string: str):
     result = 0
 
     for n in range(len(values) - 1):
-        if values[i] >= values[i+1]:
-            result += values[i]
+        if values[n] >= values[n+1]:
+            result += values[n]
         else:
-            result -= values[i]
+            result -= values[n]
 
     return result
